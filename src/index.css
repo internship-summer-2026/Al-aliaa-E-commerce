@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+@import "tailwindcss";
+
+
+.header{
+font-family: Cairo;
+font-weight: 700;
+font-style: Bold;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color:#9D9D9D
+}
+
+.login-container{
+  width: 485px;
+  min-height: 490px;
+  height:auto;
+  background: #FFFFFF;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.title{
+font-family: Cairo;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 32px;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: center;
+padding-top: 24px;
+}
+.input-field{
+border: 2.5px solid #D9D9D9;
+border-radius: 8px;
+padding: 7.5px 6px 7.5px 230px;
+display:block;
+/* text-align:right; */
+}
+.remember-me{
+  appearance: none;
+  border: 2.5px solid #D9D9D9;
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.remember-me:checked::after{
+  content:"✓";
+  color:#289D61;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.login-button{
+border-radius: 8px;
+padding: 7.5px 115px;
+display:block;
+width:85%;
+height: 40px;
+cursor: pointer;
+
+}
+.other-ways{
+font-family: Cairo;
+font-weight: 700;
+font-style: Bold;
+font-size: 14px;
+line-height: 150%;
+letter-spacing: 0%;
+color: #666666;
+}
+.gmail-icon{
+  width: 35px;
+height: 35px;
+background:  #289D61;
+color:#FFFFFF;
+opacity: 1;
+border-radius: 50%;
+gap: 10px;
+padding: 5px;
+margin-bottom: 10px;
+
+}
+.register-container{
+  width: 1075px;
+  min-height: 520px;
+  height: auto;
+  background: #FFFFFF;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.input-register-field{
+  width:472px;
+  height: 55px;
+border: 2.5px solid #D9D9D9;
+border-radius: 8px;
+padding: 7.5px 6px 7.5px 230px;
+display:block;
+text-align:right;
+}
+.register-button{
+border-radius: 8px;
+padding:10px 32px ;
+display:block;
+width:89.5%;
+height: 48px;
+cursor: pointer;
+background: #289D61;
+color: #FFFFFF;
+}
