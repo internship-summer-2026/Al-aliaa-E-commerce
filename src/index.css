@@ -116,3 +116,7 @@ cursor: pointer;
 background: #289D61;
 color: #FFFFFF;
 }
+input::-ms-reveal,
+input::-ms-clear {
+  display: none;
+}
