@@ -1,0 +1,647 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Cairo", sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.contact-wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    padding: 22px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.04);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1.1fr;
+
+    gap: 55px;
+
+    direction: ltr;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.contact-form {
+    direction: rtl;
+    padding: 5px 0;
+}
+
+.contact-form h1 {
+    font-size: 28px;
+    font-weight: 700;
+
+    text-align: center;
+
+    margin-bottom: 8px;
+
+    color: #292929;
+}
+
+.intro {
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.9;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+    position: relative;
+
+    margin-bottom: 16px;
+}
+
+.input-group i {
+    position: absolute;
+
+    right: 18px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #999;
+
+    font-size: 14px;
+
+    z-index: 2;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 6px;
+
+    outline: none;
+
+    background: #fff;
+
+    color: #444;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.input-group input {
+    height: 36px;
+
+    padding: 0 45px 0 15px;
+}
+
+.input-group textarea {
+    height: 170px;
+
+    resize: none;
+
+    padding: 13px 45px 13px 15px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #319967;
+
+    box-shadow:
+        0 0 0 2px rgba(49, 153, 103, 0.08);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+    color: #aaa;
+}
+
+.textarea-group i {
+    top: 20px;
+
+    transform: none;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.send-btn {
+    display: block;
+
+    margin: 32px auto 0;
+
+    min-width: 136px;
+
+    height: 37px;
+
+    padding: 0 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #2e9a66;
+
+    color: #fff;
+
+    font-family: inherit;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.send-btn:hover {
+    background: #257d54;
+
+    transform: translateY(-1px);
+}
+
+.send-btn i {
+    margin-left: 8px;
+}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map-section {
+    direction: rtl;
+}
+
+.map-container {
+    position: relative;
+
+    height: 397px;
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e9edf0 0%,
+            #dce3e8 45%,
+            #eef0f1 100%
+        );
+}
+
+
+/* خطوط الخريطة */
+
+.map-container::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -20%;
+
+    opacity: 0.55;
+
+    background:
+        linear-gradient(
+            55deg,
+            transparent 0 20%,
+            #fff 20.5% 21.2%,
+            transparent 21.5% 45%,
+            #fff 45.5% 46.5%,
+            transparent 47%
+        ),
+
+        linear-gradient(
+            125deg,
+            transparent 0 35%,
+            #fff 35.5% 36.5%,
+            transparent 37% 60%,
+            #fff 60.5% 61.3%,
+            transparent 62%
+        );
+
+    transform: rotate(-5deg);
+}
+
+
+/* النهر */
+
+.river {
+    position: absolute;
+
+    width: 150%;
+    height: 105px;
+
+    left: -25%;
+    top: 115px;
+
+    background: #72b8ec;
+
+    border-radius: 50%;
+
+    transform: rotate(13deg);
+
+    box-shadow:
+        0 0 0 18px rgba(255,255,255,.35),
+        0 0 0 24px #72b8ec;
+}
+
+.river::after {
+    content: "";
+
+    position: absolute;
+
+    width: 60%;
+    height: 55px;
+
+    background: #dce7ed;
+
+    border-radius: 50%;
+
+    left: 15%;
+    top: 20px;
+}
+
+
+/* الحديقة */
+
+.park {
+    position: absolute;
+
+    width: 180px;
+    height: 145px;
+
+    right: -15px;
+    bottom: -15px;
+
+    background: #6bd0bb;
+
+    border-radius: 20px 0 0 0;
+
+    transform: rotate(-8deg);
+
+    opacity: .85;
+}
+
+.park::after {
+    content: "";
+
+    position: absolute;
+
+    width: 45px;
+    height: 180px;
+
+    background: #50b7a6;
+
+    left: 75px;
+    top: -15px;
+
+    transform: rotate(22deg);
+
+    opacity: .6;
+}
+
+
+/* الطرق الصفراء */
+
+.yellow-road {
+    position: absolute;
+
+    width: 7px;
+    height: 520px;
+
+    background: #f6df28;
+
+    top: -60px;
+    left: 105px;
+
+    transform: rotate(27deg);
+
+    z-index: 2;
+}
+
+.yellow-road.second {
+    left: auto;
+
+    right: 150px;
+
+    top: -90px;
+
+    transform: rotate(10deg);
+}
+
+
+/* الطرق البيضاء */
+
+.road {
+    position: absolute;
+
+    height: 7px;
+    width: 650px;
+
+    background: rgba(255,255,255,.9);
+
+    z-index: 3;
+
+    transform: rotate(-22deg);
+
+    left: -70px;
+    top: 255px;
+}
+
+.road.second {
+    transform: rotate(18deg);
+
+    top: 175px;
+
+    left: -50px;
+}
+
+
+/* =========================
+   MAP LABEL
+========================= */
+
+.map-label {
+    position: absolute;
+
+    top: 110px;
+    right: 125px;
+
+    z-index: 10;
+
+    background: #fff;
+
+    border: 1px solid #78a994;
+
+    border-radius: 6px;
+
+    padding: 8px 18px;
+
+    color: #3e755b;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,.05);
+}
+
+
+/* =========================
+   MAIN PIN
+========================= */
+
+.location-pin {
+    position: absolute;
+
+    z-index: 20;
+
+    top: 155px;
+    right: 235px;
+
+    width: 65px;
+    height: 65px;
+
+    background: #17814e;
+
+    border-radius:
+        50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,.15);
+}
+
+.location-pin::after {
+    content: "";
+
+    position: absolute;
+
+    width: 14px;
+    height: 14px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    top: 25px;
+    left: 25px;
+}
+
+
+/* =========================
+   SMALL PINS
+========================= */
+
+.small-pin {
+    position: absolute;
+
+    z-index: 15;
+
+    width: 20px;
+    height: 20px;
+
+    background: #df3928;
+
+    border-radius:
+        50% 50% 50% 0;
+
+    transform: rotate(-45deg);
+}
+
+.small-pin::after {
+    content: "";
+
+    position: absolute;
+
+    width: 6px;
+    height: 6px;
+
+    background: #fff;
+
+    border-radius: 50%;
+
+    top: 7px;
+    left: 7px;
+}
+
+.pin-one {
+    bottom: 27px;
+    left: 50px;
+}
+
+.pin-two {
+    bottom: 70px;
+    right: 110px;
+}
+
+
+/* =========================
+   CONTACT INFO
+========================= */
+
+.contact-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 18px;
+
+    margin-top: 15px;
+}
+
+.info-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    direction: rtl;
+}
+
+.info-icon {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border-radius: 7px;
+
+    background: #299662;
+
+    color: #fff;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 15px;
+}
+
+.info-content {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.info-title {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    color: #333;
+}
+
+.info-text {
+    font-size: 9px;
+
+    color: #777;
+
+    direction: rtl;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .map-section {
+        order: -1;
+    }
+
+    .map-container {
+        height: 330px;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        justify-content: flex-start;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .contact-wrapper {
+        width: 94%;
+
+        padding: 15px;
+
+        margin: 15px auto;
+    }
+
+    .contact-form h1 {
+        font-size: 24px;
+    }
+
+    .map-container {
+        height: 270px;
+    }
+
+    .location-pin {
+        right: 45%;
+
+        top: 110px;
+    }
+
+    .map-label {
+        right: 50%;
+
+        transform: translateX(50%);
+
+        top: 65px;
+
+        white-space: nowrap;
+    }
+}

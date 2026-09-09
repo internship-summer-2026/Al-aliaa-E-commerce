@@ -1,13 +1,183 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>madadalalyaa</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>contact us</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contact-wrapper">
+
+        <section class="contact-form">
+
+            <h1> contact us</h1>
+
+            <p class="intro">
+                نسعد بالإجابة على استفساراتكم ومساعدتكم.
+                يرجى ملء النموذج أدناه<br>
+                وسنتواصل معكم في أقرب وقت ممكن.
+            </p>
+
+            <form id="contactForm">
+
+                <div class="input-group">
+                    <i class="fa-regular fa-user"></i>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="الاسم بالكامل"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-regular fa-envelope"></i>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="البريد الإلكتروني"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="رقم الهاتف"
+                        required
+                    >
+                </div>
+
+                <div class="input-group textarea-group">
+                    <i class="fa-regular fa-paper-plane"></i>
+
+                    <textarea
+                        id="message"
+                        placeholder="اكتب رسالتك هنا ........"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">
+                    <i class="fa-regular fa-paper-plane"></i>
+                    إرسال الرسالة
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="map-section">
+
+            <div class="map-container">
+
+                <div class="river"></div>
+
+                <div class="park"></div>
+
+                <div class="yellow-road"></div>
+                <div class="yellow-road second"></div>
+
+                <div class="road"></div>
+                <div class="road second"></div>
+
+                <div class="map-label">
+                    مقر دار الأطباء
+                </div>
+
+                <div class="location-pin"></div>
+
+                <div class="small-pin pin-one"></div>
+                <div class="small-pin pin-two"></div>
+
+            </div>
+
+
+            
+            <div class="contact-info">
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div class="info-content">
+                        <span class="info-title">العنوان</span>
+                        <span class="info-text">
+                            السعودية، الرياض
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="info-content">
+                        <span class="info-title">رقم الهاتف</span>
+                        <span class="info-text" dir="ltr">
+                            +20 123 456 7890
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div class="info-item">
+
+                    <div class="info-icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+
+                    <div class="info-content">
+                        <span class="info-title">
+                            البريد الإلكتروني
+                        </span>
+
+                        <span class="info-text" dir="ltr">
+                            info@madadalayaa.com
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
